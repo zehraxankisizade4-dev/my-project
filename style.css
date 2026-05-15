@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+}
+
+
+
+
+
+.headertext {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5vw;
+}
+
+.headertext img {
+    height: 30px;
+}
+
+.headertext ol {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    list-style: none;
+    font-size: 13px;
+}
+
+.headertext ol li {
+    color: #959BA4;
+    cursor: pointer;
+}
+
+.headertext ol .banktext {
+    color: black;
+}
+
+.login-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+
+h1 {
+    margin-left: 7vw;
+    margin-top: 5vw;
+    font-size: 38px;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    gap: 2vw;
+    padding: 0 5vw;
+}
+
+
+
+
+
+.box {
+    width: 400px;
+
+    margin-top: 2vw;
+    padding: 20px;
+
+    background: white;
+    color: #9f9f9f;
+}
+
+
+
+
+
+.currency-select {
+    display: flex;
+    margin: 10px 0;
+}
+
+
+.currency-select button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    background: white;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+.currency-select button.active {
+    background: #833AE0;
+    color: white;
+}
+
+.active3 {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.active4 {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+
+.input-box {
+    margin-top: 10px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    height: 100px;
+
+    padding: 20px;
+
+    border: none;
+    outline: none;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.info {
+    padding: 12px 20px;
+
+    color: #C6C6C6;
+    font-size: 14px;
+}
+
+
+
+
+
+.result {
+    display: flex;
+    margin-top: 20px;
+}
+
+.buy,
+.sell {
+    width: 25%;
+    height: 130px;
+
+    border-radius: 4px;
+
+    background: #833AE0;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value {
+    flex: 1;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 20px;
+
+    font-size: 22px;
+}
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:991px) {
+
+    .headertext {
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .headertext img {
+        height: 28px;
+    }
+
+    .headertext ol {
+        gap: 12px;
+        font-size: 11px;
+
+        flex-wrap: wrap;
+    }
+
+    .login-btn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        margin-left: 30px;
+
+        font-size: 32px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .container .box:nth-child(3) {
+        width: 93%;
+    }
+
+    .currency-select button {
+        font-size: 13px;
+    }
+
+    input {
+        height: 90px;
+        font-size: 30px;
+    }
+
+    .buy,
+    .sell {
+        height: 110px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:600px) {
+
+    .headertext {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .headertext ol {
+        display: none;
+    }
+
+    .headertext img {
+        width: 75px;
+        height: auto;
+    }
+
+    .login-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    h1 {
+        margin-top: 35px;
+        margin-left: 20px;
+
+        font-size: 28px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 0 20px;
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .currency-select {
+        flex-wrap: wrap;
+    }
+
+    .currency-select button {
+        width: 50%;
+        font-size: 13px;
+    }
+
+    input {
+        height: 80px;
+
+        padding: 15px;
+
+        font-size: 28px;
+    }
+
+    .buy,
+    .sell {
+        height: 90px;
+        font-size: 18px;
+    }
+
+    .value {
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+    .info {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+
+
+.offline-message {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background: #ff4d4d;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+
+.offline-message::before {
+    content: "⚠";
+    font-size: 16px;
+}
